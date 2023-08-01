@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Movie List</string>
+    <string name="tvTitle">Movie title</string>
+    <string name="etTitle">Enter Movie title</string>
+    <string name="tvGenre">Genre</string>
+    <string name="etGenre">Enter the movie Genre</string>
+    <string name="tvYear">Year</string>
+    <string name="etYear">Enter the year of release</string>
+    <string name="tvRating">Rating</string>
+    <string-array name="ratings">
+        <item>G</item>
+        <item>PG</item>
+        <item>PG-13</item>
+        <item>NC16</item>
+        <item>M18</item>
+        <item>R21</item>
+    </string-array>
+    <string name="btnInsert">INSERT</string>
+    <string name="btnShowList">SHOW LIST</string>
+    <string name="btnUpdate">UPDATE</string>
+    <string name="btnCancel">CANCEL</string>
+    <string name="btnDelete">DELETE</string>
+</resources>
