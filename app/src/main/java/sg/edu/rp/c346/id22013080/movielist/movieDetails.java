@@ -27,8 +27,8 @@ public class movieDetails extends AppCompatActivity {
 
         lv = findViewById(R.id.movieList);
         back = findViewById(R.id.buttonBack);
-        btnFilter = findViewById(R.id.buttonFilter);
-        spnFilter = findViewById(R.id.spinnerRatingFilter);
+        //btnFilter = findViewById(R.id.buttonFilter);
+        //spnFilter = findViewById(R.id.spinnerRatingFilter);
 
         Intent intentReceived = getIntent();
         moviesList = new ArrayList<Movies>();

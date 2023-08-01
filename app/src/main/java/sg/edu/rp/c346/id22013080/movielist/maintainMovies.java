@@ -41,22 +41,22 @@ public class maintainMovies extends AppCompatActivity {
         newGenre.setText(data.getGenre());
         newYear.setText("" + data.getYear());
 
-        if(data.getRating().equalsIgnoreCase("g")){
+        if(data.getRating().equalsIgnoreCase("G")){
             newRating.setSelection(0);
         }
-        else if(data.getRating().equalsIgnoreCase("pg")){
+        else if(data.getRating().equalsIgnoreCase("PG")){
             newRating.setSelection(1);
         }
-        else if (data.getRating().equalsIgnoreCase("pg-13")) {
+        else if (data.getRating().equalsIgnoreCase("PG-13")) {
             newRating.setSelection(2);
         }
-        else if(data.getRating().equalsIgnoreCase("nc16")){
+        else if(data.getRating().equalsIgnoreCase("NC16")){
             newRating.setSelection(3);
         }
-        else if(data.getRating().equalsIgnoreCase("m18")){
+        else if(data.getRating().equalsIgnoreCase("M18")){
             newRating.setSelection(4);
         }
-        else if(data.getRating().equalsIgnoreCase("r21")){
+        else if(data.getRating().equalsIgnoreCase("R21")){
             newRating.setSelection(5);
         }
 
@@ -70,6 +70,8 @@ public class maintainMovies extends AppCompatActivity {
                 data.setGenre(newGenre.getText().toString());
                 data.setYear(Integer.parseInt(newYear.getText().toString()));
                 data.setRating((String) newRating.getSelectedItem());
+
+                db.updateMovie(data);
 
                 Toast.makeText(maintainMovies.this, "Movie updated", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(maintainMovies.this, movieDetails.class);
