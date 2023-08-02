@@ -66,6 +66,7 @@ public class DBHelper extends SQLiteOpenHelper {
               int year = cursor.getInt(3);
               String rating = cursor.getString(4);
               Movies obj = new Movies(id, title,genre,year,rating);
+              movies.add(obj);
             }
             while(cursor.moveToNext());
         }

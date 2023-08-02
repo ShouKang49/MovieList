@@ -40,6 +40,11 @@ public class MainActivity extends AppCompatActivity {
 
                 db.insertMovie(title, genre, year, rating);
 
+                etTitle.setText("");
+                etGenre.setText("");
+                etYear.setText("");
+                spnRating.setSelection(0);
+
                 Toast.makeText(MainActivity.this, "Movie added", Toast.LENGTH_SHORT).show();
             }
         });

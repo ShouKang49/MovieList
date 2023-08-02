@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Spinner;
@@ -32,6 +33,8 @@ public class movieDetails extends AppCompatActivity {
 
         Intent intentReceived = getIntent();
         moviesList = new ArrayList<Movies>();
+
+        //ArrayAdapter arrayAdapter = new ArrayAdapter<>(movieDetails.this, android.R.layout.simple_list_item_1, moviesList);
 
         adapter = new CustomAdapter(movieDetails.this, R.layout.row, moviesList);
         lv.setAdapter(adapter);
